@@ -2,7 +2,12 @@
 
 Example project showing how to use terraform for aws codepipeline.  
 Though admittedly - with github actions I have no idea why anyone would want to use codepipeline but I suppose people are into all sorts of weird things.  
-Showing the different tooling that help you use terraform.  
+
+This repo shows the different tooling that help with terraform.  
+- tflint
+- terraform-docs
+- asdf
+
 This project uses the last FOSS version of terraform 1.5.7 which is wildly outdated at this point.  
 Given a choice I would use opentofu.  
 
@@ -11,13 +16,14 @@ Given a choice I would use opentofu.
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider_aws) | ~> 5.0 |
+| <a name="provider_aws"></a> [aws](#provider_aws) | 5.100.0 |
 
 #### Modules
 
 No modules.
 
-#### Input
+#### Inputs
+
 | Name | Description | Type |
 |------|-------------|------|
 | <a name="input_artifact_bucket_force_destroy"></a> [artifact_bucket_force_destroy](#input_artifact_bucket_force_destroy) | Allow Terraform to delete a non-empty artifact bucket. | `bool` |
