@@ -1,4 +1,5 @@
 resource "aws_s3_bucket" "artifacts" {
+  # s3 buckets are globally unique across all of aws
   bucket        = "${var.project_name}-artifacts"
   force_destroy = var.artifact_bucket_force_destroy
 }

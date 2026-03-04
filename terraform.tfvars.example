@@ -1,7 +1,7 @@
 aws_region               = "us-east-1"
 assume_role_arn          = "arn:aws:iam::123456789012:role/TerraformExecutionRole"
 assume_role_session_name = "terraform-codepipeline"
-# assume_role_external_id  = "optional-external-id"
+assume_role_external_id  = "external-id"
 project_name             = "example-codepipeline"
 repository_id            = "your-github-user/your-repo"
 branch_name              = "main"
